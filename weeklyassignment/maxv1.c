@@ -1,24 +1,19 @@
 #include<stdio.h>
-
-int main() 
+int main()
 {
-  int num[50], i=0, tmp,j;
-  for(i=0;i<3;i++)
-  {
-      scanf("%d", &num[i]);
-  }
-  for(i=0;i<3;i++)
-  {
-      for(j=i+1;j<3;j++)
-      {
-          if(num[i]>num[j])
-          {
-              tmp = num[i];
-              num[i] = num[j];
-              num[j] =tmp;
-          }
-      } 
-  }
-  printf("%d", num[2]);
-  return 0;
+    int a, b, c;
+    scanf("%d %d %d", &a, &b, &c);
+    if(a>b&&a>c)
+    {
+        printf("%d", a);
+    }
+    if(b>a&&b>c)
+    {
+        printf("%d", b);
+    }
+    if(c>b&&c>a)
+    {
+        printf("%d", c);
+    }
+    return 0;
 }
